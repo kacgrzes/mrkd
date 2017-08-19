@@ -13,6 +13,10 @@
   "author": "Kacper Grzeszczyk",
   "license": "ISC",
   "devDependencies": {
+    "babel-eslint": "^7.2.3",
     "standard": "^10.0.3"
+  },
+  "standard": {
+    "parser": "babel-eslint"
   }
 }
