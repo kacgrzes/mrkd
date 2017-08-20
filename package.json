@@ -4,7 +4,8 @@
   "description": "Attempt to create markdown parser in JS",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate-docs": "node_modules/.bin/jsdoc --configure .jsdoc.json --verbose"
   },
   "keywords": [
     "markdown",
@@ -14,6 +15,8 @@
   "license": "ISC",
   "devDependencies": {
     "babel-eslint": "^7.2.3",
+    "jsdoc": "^3.5.4",
+    "minami": "^1.2.3",
     "standard": "^10.0.3"
   },
   "standard": {
