@@ -28,10 +28,16 @@ const Scanner = input => {
     return ch
   }
 
+  /** Resets position back to 0 */
+  const reset = () => {
+    position = 0
+  }
+
   return {
     peek,
     eof,
-    next
+    next,
+    reset
   }
 }
 

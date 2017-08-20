@@ -4,7 +4,7 @@
   "description": "Attempt to create markdown parser in JS",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node_modules/mocha/bin/mocha --require babel-polyfill --compilers js:babel-register -u tdd",
     "generate-docs": "node_modules/.bin/jsdoc --configure .jsdoc.json --verbose"
   },
   "keywords": [
@@ -15,8 +15,13 @@
   "license": "ISC",
   "devDependencies": {
     "babel-eslint": "^7.2.3",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-register": "^6.26.0",
+    "chai": "^4.1.1",
     "jsdoc": "^3.5.4",
     "minami": "^1.2.3",
+    "mocha": "^3.5.0",
     "standard": "^10.0.3"
   },
   "standard": {
