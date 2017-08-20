@@ -4,7 +4,7 @@
   "description": "Attempt to create markdown parser in JS",
   "main": "index.js",
   "scripts": {
-    "test": "node_modules/mocha/bin/mocha --require babel-polyfill --compilers js:babel-register -u tdd",
+    "test": "node_modules/mocha/bin/mocha",
     "generate-docs": "node_modules/.bin/jsdoc --configure .jsdoc.json --verbose"
   },
   "keywords": [
